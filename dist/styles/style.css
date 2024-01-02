@@ -1,0 +1,112 @@
+.containerPadrao {
+  max-width: 1023px;
+  width: 100%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+body {
+  background-color: #c8d6e5;
+}
+header {
+  background-color: #341f97;
+  padding: 16px 0;
+  margin-bottom: 50px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1023px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .container .menu {
+  display: flex;
+}
+header .container .menu li {
+  list-style: none;
+  margin-left: 16px;
+  font-weight: bold;
+}
+header .container .menu li a {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-size: 20px;
+}
+@media (max-width:767px) {
+  header .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width:768px) and (max-width: 1023px) {
+  header .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.container {
+  margin-top: 40px;
+  max-width: 1023px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width:767px) {
+  .container h2 {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width:768px) and (max-width: 1023px) {
+  .container h2 {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+.container .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+  list-style: none;
+}
+@media (max-width:767px) {
+  .container .products {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (min-width:768px) and (max-width: 1023px) {
+  .container .products {
+    max-width: 80%;
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+    margin: 0 auto;
+  }
+}
+.container .products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+.container .products .product-item a {
+  margin-top: 8px;
+  text-decoration: none;
+  background-color: #44bd32;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  color: #f5f6fa;
+  font-weight: bold;
+  border-radius: 8px;
+}
